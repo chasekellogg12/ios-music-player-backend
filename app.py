@@ -1,4 +1,3 @@
-# app.py (Flask App)
 from flask import Flask, request, jsonify
 from pytube import YouTube
 
@@ -6,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def test():
-    return "Hello!"
+    return "Welcome"
 
 @app.route('/get_audio_link', methods=['POST'])
 def get_audio_link():
@@ -19,6 +18,3 @@ def get_audio_link():
     stream_url = audio_stream.url
     print(stream_url)
     return jsonify({'audio_stream_url': stream_url})
-
-# if __name__ == '__main__':
-#     app.run(host='0.0.0.0', port=5000, debug=True)
