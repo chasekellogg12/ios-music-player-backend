@@ -17,8 +17,8 @@ def test():
 @app.route('/get_audio_link', methods=['POST'])
 def get_audio_link():
     data = request.json
-    yt_url = data['youtube_link']
-    #yt_url = "https://www.youtube.com/watch?v=id0kbyKCG8c&ab_channel=VideoGamesMusic" - for testing
+    #yt_url = data['youtube_link']
+    yt_url = "https://www.youtube.com/watch?v=id0kbyKCG8c&ab_channel=VideoGamesMusic" # - for testing
     start_time = time.time()  # Start profiling
 
     # Check cache first
