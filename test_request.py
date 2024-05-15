@@ -1,12 +1,12 @@
 import requests
 import json
 
-# URL for the local Flask app
-url = "http://127.0.0.1:5000/get_audio_link"
+# URL for the Flask app
+url = "https://musicplayer-d1169b8bdeeb.herokuapp.com/get_audio_link"
 
 # Data to be sent in the POST request
 data = {
-    "youtube_link": "https://www.youtube.com/watch?v=id0kbyKCG8c&ab_channel=VideoGamesMusic"
+    "youtube_link": "https://www.youtube.com/watch?v=whNOfvyPpaM&ab_channel=lwilkers"
 }
 
 # Send the POST request
